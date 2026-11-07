@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order a Project | Surjith R</title>
+<meta name="description" content="Tell Surjith R your idea and get it built: robotics, IoT, AI, smart home and web projects made to your needs.">
+<meta name="theme-color" content="#06080c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%2381c4ff' d='M6 4h6l-4 24H2z'/%3E%3Cpath fill='%231c69d4' d='M14 4h6l-4 24h-6z'/%3E%3Cpath fill='%23e7222e' d='M22 4h6l-4 24h-6z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="order">
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Custom orders</div>
+      <h1>Order your <span class="grad">project</span></h1>
+      <p class="lead">Have an idea? Tell me about it and I will build it to your needs. Fill in the form and send it to me on WhatsApp or email.</p>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap order-grid">
+      <form class="panel reveal" id="orderForm" novalidate>
+        <div class="two">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required></div>
+          <div class="field"><label for="contact">Phone or email</label><input id="contact" name="contact" type="text" autocomplete="off" placeholder="How can I reach you?" required></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="type">Project type</label>
+            <select id="type" name="type">
+              <option>Robotics project</option>
+              <option>IoT / smart device</option>
+              <option>AI / computer vision</option>
+              <option>Smart home automation</option>
+              <option>Website or dashboard</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field"><label for="budget">Budget</label>
+            <select id="budget" name="budget">
+              <option>Not sure yet</option>
+              <option>Under &#8377;2,000</option>
+              <option>&#8377;2,000 &ndash; &#8377;5,000</option>
+              <option>&#8377;5,000 &ndash; &#8377;15,000</option>
+              <option>&#8377;15,000+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="deadline">Needed by (optional)</label><input id="deadline" name="deadline" type="text" placeholder="For example: end of December"></div>
+        <div class="field"><label for="idea">Your idea</label><textarea id="idea" name="idea" placeholder="Describe what you want to build and what it should do." required></textarea></div>
+        <div class="btn-row" style="margin-top:6px">
+          <button type="button" class="btn primary" id="sendWA">Send on WhatsApp</button>
+          <button type="button" class="btn" id="sendMail">Send by email</button>
+          <button type="button" class="btn" id="copyMsg">Copy message</button>
+        </div>
+        <div class="err" id="formErr" role="status"></div>
+        <p class="note">Your message opens in WhatsApp or your email app so you can check it before sending. I reply with questions and a clear quote before any work begins.</p>
+      </form>
+
+      <aside>
+        <div class="panel reveal">
+          <h3>How ordering works</h3>
+          <div class="timeline" style="margin-top:20px">
+            <div class="tl"><b>1. Send your idea</b><p>Use the form. Rough ideas are fine.</p></div>
+            <div class="tl"><b>2. Plan &amp; quote</b><p>I explain how it will work, the parts needed, the price and the time.</p></div>
+            <div class="tl"><b>3. Agree</b><p>We confirm the details in writing before I start.</p></div>
+            <div class="tl"><b>4. Build &amp; deliver</b><p>I build, test and hand it over with a simple guide.</p></div>
+          </div>
+        </div>
+
+        <div class="panel faq reveal" style="margin-top:18px">
+          <h3 style="margin-bottom:6px">Questions</h3>
+          <details><summary>How much will it cost?</summary><p>It depends on the parts and the time needed. I give a clear quote after hearing your idea, before any work starts.</p></details>
+          <details><summary>How long does it take?</summary><p>Small builds can take days; bigger ones take longer. You get an estimate with the quote.</p></details>
+          <details><summary>Do I need technical knowledge?</summary><p>No. Explain what you want in simple words, in Tamil or English, and I will handle the rest.</p></details>
+          <details><summary>Can you do my school project?</summary><p>I'm happy to guide you and explain how a project works so you can learn it, but I don't make work to be handed in as someone else's.</p></details>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
